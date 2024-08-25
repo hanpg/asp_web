@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "klzDBkWnooVZf/gr2dSLfa9KQoYhIfncGro46hl3bZg=",
+  "Hash": "b4qh9T+IYKhtF7hfLSx57XNYS6Sh37/P40aL6udNxK8=",
   "Source": "BaiTap01",
   "BasePath": "_content/BaiTap01",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\Information Technology\\Năm 3\\Lap trinh Web\\GitHub\\asp_web\\BaiTap01\\BaiTap01\\wwwroot\\css\\temp.css",
+      "SourceId": "BaiTap01",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Information Technology\\Năm 3\\Lap trinh Web\\GitHub\\asp_web\\BaiTap01\\BaiTap01\\wwwroot\\",
+      "BasePath": "_content/BaiTap01",
+      "RelativePath": "css/temp.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\temp.css"
     },
     {
       "Identity": "D:\\Information Technology\\Năm 3\\Lap trinh Web\\GitHub\\asp_web\\BaiTap01\\BaiTap01\\wwwroot\\favicon.ico",
