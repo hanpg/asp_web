@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Information Technology\\Năm 3\\Lap trinh Web\\GitHub1\\asp_web\\BaiTap04\\BaiTap04\\BaiTap04.csproj": {}
+    "D:\\Information Technology\\Năm 3\\HKI\\Lap trinh Web\\GitHub\\asp_web\\BaiTap04\\BaiTap04\\BaiTap04.csproj": {}
   },
   "projects": {
-    "D:\\Information Technology\\Năm 3\\Lap trinh Web\\GitHub1\\asp_web\\BaiTap04\\BaiTap04\\BaiTap04.csproj": {
+    "D:\\Information Technology\\Năm 3\\HKI\\Lap trinh Web\\GitHub\\asp_web\\BaiTap04\\BaiTap04\\BaiTap04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Information Technology\\Năm 3\\Lap trinh Web\\GitHub1\\asp_web\\BaiTap04\\BaiTap04\\BaiTap04.csproj",
+        "projectUniqueName": "D:\\Information Technology\\Năm 3\\HKI\\Lap trinh Web\\GitHub\\asp_web\\BaiTap04\\BaiTap04\\BaiTap04.csproj",
         "projectName": "BaiTap04",
-        "projectPath": "D:\\Information Technology\\Năm 3\\Lap trinh Web\\GitHub1\\asp_web\\BaiTap04\\BaiTap04\\BaiTap04.csproj",
+        "projectPath": "D:\\Information Technology\\Năm 3\\HKI\\Lap trinh Web\\GitHub\\asp_web\\BaiTap04\\BaiTap04\\BaiTap04.csproj",
         "packagesPath": "C:\\Users\\GiaHan\\.nuget\\packages\\",
-        "outputPath": "D:\\Information Technology\\Năm 3\\Lap trinh Web\\GitHub1\\asp_web\\BaiTap04\\BaiTap04\\obj\\",
+        "outputPath": "D:\\Information Technology\\Năm 3\\HKI\\Lap trinh Web\\GitHub\\asp_web\\BaiTap04\\BaiTap04\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
