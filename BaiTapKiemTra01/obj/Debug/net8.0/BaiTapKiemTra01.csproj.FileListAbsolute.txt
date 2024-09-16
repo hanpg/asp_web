@@ -528,4 +528,4 @@ D:\Information Technology\Năm 3\HKI\Lap trinh Web\GitHub\asp_web\BaiTapKiemTra0
 D:\Information Technology\Năm 3\HKI\Lap trinh Web\GitHub\asp_web\BaiTapKiemTra01\obj\Debug\net8.0\BaiTapKiemTra01.pdb
 D:\Information Technology\Năm 3\HKI\Lap trinh Web\GitHub\asp_web\BaiTapKiemTra01\obj\Debug\net8.0\BaiTapKiemTra01.genruntimeconfig.cache
 D:\Information Technology\Năm 3\HKI\Lap trinh Web\GitHub\asp_web\BaiTapKiemTra01\obj\Debug\net8.0\ref\BaiTapKiemTra01.dll
-D:\Information Technology\Năm 3\HKI\Lap trinh Web\GitHub\asp_web\BaiTapKiemTra01\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout - Copy.cshtml.rz.scp.css
+D:\Information Technology\Năm 3\HKI\Lap trinh Web\GitHub\asp_web\BaiTapKiemTra01\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout2.cshtml.rz.scp.css
