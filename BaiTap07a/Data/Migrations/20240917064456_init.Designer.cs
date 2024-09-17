@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BaiTap07a.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240916065920_init")]
+    [Migration("20240917064456_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -25,7 +25,7 @@ namespace BaiTap07a.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BaiTap07.Models.TheLoai", b =>
+            modelBuilder.Entity("BaiTap07a.Models.TheLoai", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

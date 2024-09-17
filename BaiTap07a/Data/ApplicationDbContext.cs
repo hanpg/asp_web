@@ -10,7 +10,6 @@ namespace BaiTap07a.Data
             : base(options)
         {
         }
-
         public DbSet<TheLoai> TheLoai { get; set; }
     }
 }
