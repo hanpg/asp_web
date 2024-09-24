@@ -22,7 +22,7 @@ namespace BaiTap07a.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BaiTap07.Models.TheLoai", b =>
+            modelBuilder.Entity("BaiTap07a.Models.TheLoai", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
