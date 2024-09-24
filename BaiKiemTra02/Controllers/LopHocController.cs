@@ -41,16 +41,16 @@ namespace BaiKiemTra02.Controllers
             {
                 return NotFound();
             }
-            var theloai = _db.LopHoc.Find(id);
-            return View(theloai);
+            var lophoc = _db.LopHoc.Find(id);
+            return View(lophoc);
         }
 
         [HttpPost]
-        public IActionResult Edit(LopHoc theloai)
+        public IActionResult Edit(LopHoc lophoc)
         {
             if (ModelState.IsValid)
             {
-                _db.LopHoc.Update(theloai);
+                _db.LopHoc.Update(lophoc);
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -64,19 +64,19 @@ namespace BaiKiemTra02.Controllers
             {
                 return NotFound();
             }
-            var theloai = _db.LopHoc.Find(id);
-            return View(theloai);
+            var lophoc = _db.LopHoc.Find(id);
+            return View(lophoc);
         }
 
         [HttpPost]
         public IActionResult DeleteConfirm(int id)
         {
-            var theloai = _db.LopHoc.Find(id);
-            if (theloai == null)
+            var lophoc = _db.LopHoc.Find(id);
+            if (lophoc == null)
             {
                 return NotFound();
             }
-            _db.LopHoc.Remove(theloai);
+            _db.LopHoc.Remove(lophoc);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -88,8 +88,8 @@ namespace BaiKiemTra02.Controllers
             {
                 return NotFound();
             }
-            var theloai = _db.LopHoc.Find(id);
-            return View(theloai);
+            var lophoc = _db.LopHoc.Find(id);
+            return View(lophoc);
         }
     }
 }
