@@ -1,0 +1,37 @@
+﻿@model Sach
+<div class="container">
+    <h3>Thêm/Chỉnh sửa</h3>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <form method="post" asp-action="Upsert">
+        <div class="form-group">
+            <label asp-for="TieuDeSach">Tên sách</label>
+            <input asp-for="TieuDeSach" type="text" class="form-control" />
+            <span asp-validation-for="TieuDeSach" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NamXuatBan">Năm xuất bản</label>
+            <input asp-for="NamXuatBan" type="date" class="form-control" />
+            <span asp-validation-for="NamXuatBan" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ImageUrl">Hình ảnh</label>
+            <input asp-for="ImageUrl" type="text" class="form-control" />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="MaTacGia">Tác giả</label>
+            <select asp-for="MaTacGia" asp-items="@ViewBag.DSTacGia" class="form-control">
+                <option disabled>Chọn tác giả</option>
+            </select>
+            <span asp-validation-for="MaTacGia" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Tạo mới</button>
+        <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div class="container">
+    <table class="table">
+        <thead>
+        <th>Tên tác giả</th>
+        <th>Năm sinh</th>
+        <th>Quốc tịch</th>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.TacGia)
+            {
+                <tr>
+                    <td width="30%">
+                        @item.TenTacGia
+                    </td>
+                    <td width="30%">
+                        @String.Format("{00:dd/MM/yyyy}", item.NamSinh)
+                    </td>
+                    <td width="30%">
+                        @item.QuocTich
+                    </td>
+                    <td width="40%">
+                        <a asp-action="Edit" asp-route-id="@item.MaTacGia">
+                            Edit
+                        </a> |
+                        <a asp-action="Delete" asp-route-id="@item.MaTacGia">
+                            Delete
+                        </a> |
+                        <a asp-action="Detail" asp-route-id="@item.MaTacGia">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-controller="TacGia" asp-action="Create" class="btn btn-primary">Thêm mới</a>
+</div>

@@ -1,0 +1,19 @@
+﻿@using BaiKiemTra03_02.Models
+@model IEnumerable<Sach>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                <img src="@item.ImageUrl" class="card-img-top" alt="@item.TieuDeSach">
+                  <div class="card-body">
+                    <h5 class="card-title">@item.TieuDeSach</h5>
+                    <h6 class="card-title">@item.NamXuatBan</h6>
+                    <p class="card-text">@item.MaTacGia</p>
+                    </div>
+                  </div>
+                </div>
+        }
+    </div>
+</div>

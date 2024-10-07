@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Detail";
+}
+@model TacGia
+<div>
+    ID: <b>@Model.MaTacGia</b> <br />
+    Tên tác giả: <b>@Model.TenTacGia</b> <br />
+    Năm sinh: <b>@String.Format("{00:dd/MM/yyyy}", Model.NamSinh)</b> <br />
+    Quốc tịch: <b>@Model.QuocTich</b><br />
+</div>

@@ -4,10 +4,13 @@ using ProjectA.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Http.Features;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ProjectA.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class SanPhamController : Controller
     {
 
@@ -43,6 +46,38 @@ namespace ProjectA.Areas.Admin.Controllers
                 sanpham = _db.SanPham.Include("TheLoai").FirstOrDefault(sp=>sp.Id == id);
                 return View(sanpham);
             }
+        }
+
+        [HttpPost]
+        public IActionResult Upsert(SanPham sanpham)
+        {
+            if (ModelState.IsValid)
+            {
+                if (sanpham.Id == 0)
+                {
+                    _db.SanPham.Add(sanpham);
+                }
+                else 
+                {
+                    _db.SanPham.Update(sanpham);
+                }
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+                var sanpham = _db.SanPham.FirstOrDefault(sp => sp.Id == id);
+                if (sanpham == null)
+                {
+                    return NotFound();
+                }
+                _db.SanPham.Remove(sanpham);
+                _db.SaveChanges();
+                return Json(new { success = true });
         }
     }
 }

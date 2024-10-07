@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Sach>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tên sách</th>
+                <th>Năm xuất bản</th>
+                <th>Hình ảnh</th>
+                <th>Tác giả</th>
+                <th>
+                    Chức năng
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TieuDeSach</td>
+                    <td>@item.NamXuatBan</td>
+                    <td><img src="@item.ImageUrl" width="50%" /></td>
+                    <td>@item.TacGia.TenTacGia</td>
+                    <td>
+                        <a asp-action="Upsert" asp-route-id="@item.BookId">Edit</a>    |
+                        <a asp-action="Details">Details</a> |
+                        <a class="text-danger" onclick="confirmDelete(@item.BookId, $(this))">Delete</a> |
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-controller="Sach" asp-action="Upsert" class="btn btn-primary"> Thêm mới</a>
+</div>
+
+<script>
+    function confirmDelete(id, row) {
+        if (confirm("Ban co chac chan muon xoa?")) {
+            xoa(id, $(row))
+        }
+    }
+    function xoa(idx, row) {
+        $.ajax({
+            url: `Sach/Delete`,
+            type: 'POST',
+            data: { id: idx },
+            success: function (data) {
+                if (data.success) {
+                    row.closest("tr").remove();
+                } else {
+                    alert(data.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                alert("xóa thất bại: " + error);
+            }
+        })
+    }
+</script>
